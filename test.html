@@ -1,0 +1,285 @@
+<script src="./iframeConsoleRunner-7f4d47902dc785f30dedcac9c996b9f31d4dfcc33567cc48f0431bc918c2bf05.js"></script>
+<script src="./iframeRefreshCSS-bb9a2ba1f03f6147732cb3cd52ac86c6b24524aa87a05ed0b726f11e46d7e277.js"></script>
+<script src="./iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+<style type="text/css" class="INLINE_PEN_STYLESHEET_ID">body {
+  background-color: #242424;
+}
+
+.perspective {
+  position: relative;
+  margin: 150px auto;
+  perspective: 500px;
+  -webkit-perspective: 500px;
+  /* Chrome, Safari, Opera */
+  width: 140px;
+  height: 100px;
+}
+.perspective:hover .button, .perspective.active .button {
+  -webkit-transform: rotateY(10deg);
+  -moz-transform: rotateY(10deg);
+  -o-transform: rotateY(10deg);
+  -ms-transform: rotateY(10deg);
+  transform: rotateX(10deg);
+  top: -100px;
+  box-shadow: 0 3px #264bac, 0 160px 89px rgba(66, 112, 234, 0.1);
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  height: 140px;
+  width: 140px;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  background: #4270ea;
+  box-shadow: 0 8px #264bac, 0 60px 25px rgba(66, 112, 234, 0.19);
+  -webkit-transform: rotateY(40deg);
+  -moz-transform: rotateY(40deg);
+  -o-transform: rotateY(40deg);
+  -ms-transform: rotateY(40deg);
+  transform: rotateX(40deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.button__icon {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.group {
+  display: inline-block;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.icon-principles {
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.icon-principles .circle-purple1 {
+  left: 30px;
+  top: 28px;
+}
+.icon-principles .circle-gray1 {
+  left: 50px;
+  top: 28px;
+}
+.icon-principles .circle-purple2 {
+  left: 70px;
+  top: 28px;
+}
+.icon-principles .circle-gray2 {
+  left: 30px;
+  top: 48px;
+}
+.icon-principles .circle-purple3 {
+  left: 50px;
+  top: 48px;
+}
+.icon-principles .circle-gray3 {
+  left: 70px;
+  top: 48px;
+}
+.icon-principles .circle-purple4 {
+  left: 30px;
+  top: 68px;
+}
+.icon-principles .circle-gray4 {
+  left: 50px;
+  top: 68px;
+}
+.icon-principles .circle-purple5 {
+  left: 70px;
+  top: 68px;
+}
+
+.perspective:hover .icon-principles,
+.perspective.active .icon-principles {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.perspective:hover .icon-principles .circle-purple1,
+.perspective.active .icon-principles .circle-purple1 {
+  -moz-transform: translate(20px, 20px);
+  -ms-transform: translate(20px, 20px);
+  -webkit-transform: translate(20px, 20px);
+  transform: translate(20px, 20px);
+}
+.perspective:hover .icon-principles .circle-gray1,
+.perspective.active .icon-principles .circle-gray1 {
+  -moz-transform: translate(20px, 20px);
+  -ms-transform: translate(20px, 20px);
+  -webkit-transform: translate(20px, 20px);
+  transform: translate(20px, 20px);
+}
+.perspective:hover .icon-principles .circle-purple2,
+.perspective.active .icon-principles .circle-purple2 {
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+}
+.perspective:hover .icon-principles .circle-gray2,
+.perspective.active .icon-principles .circle-gray2 {
+  -moz-transform: translate(20px, -20px);
+  -ms-transform: translate(20px, -20px);
+  -webkit-transform: translate(20px, -20px);
+  transform: translate(20px, -20px);
+}
+.perspective:hover .icon-principles .circle-purple3,
+.perspective.active .icon-principles .circle-purple3 {
+  -moz-transform: translate(20px, -20px);
+  -ms-transform: translate(20px, -20px);
+  -webkit-transform: translate(20px, -20px);
+  transform: translate(20px, -20px);
+}
+.perspective:hover .icon-principles .circle-gray3,
+.perspective.active .icon-principles .circle-gray3 {
+  -moz-transform: translate(-20px, 20px);
+  -ms-transform: translate(-20px, 20px);
+  -webkit-transform: translate(-20px, 20px);
+  transform: translate(-20px, 20px);
+}
+.perspective:hover .icon-principles .circle-purple4,
+.perspective.active .icon-principles .circle-purple4 {
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -webkit-transform: translateY(-40px);
+  transform: translateY(-40px);
+}
+.perspective:hover .icon-principles .circle-gray4,
+.perspective.active .icon-principles .circle-gray4 {
+  -moz-transform: translate(-20px, -20px);
+  -ms-transform: translate(-20px, -20px);
+  -webkit-transform: translate(-20px, -20px);
+  transform: translate(-20px, -20px);
+}
+.perspective:hover .icon-principles .circle-purple5,
+.perspective.active .icon-principles .circle-purple5 {
+  -moz-transform: translateX(-40px);
+  -ms-transform: translateX(-40px);
+  -webkit-transform: translateX(-40px);
+  transform: translateX(-40px);
+}
+
+.details {
+  list-style: none;
+  padding: 0;
+  padding-top: 50px;
+  margin-left: 20px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.details__item {
+  display: inline-block;
+  margin: 0 10px;
+}
+.details__item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.details__item a:hover {
+  color: #bd953e;
+}
+</style></head>
+
+<body data-new-gr-c-s-check-loaded="14.996.0" data-gr-ext-installed="">
+  
+<div class="perspective">
+  <div class="button">
+    <div class="button__icon">
+      <div class="group group-principles">
+        <div class="icon icon-principles">
+          <div class="circle circle-purple1"></div>
+          <div class="circle circle-purple2"></div>
+          <div class="circle circle-purple3"></div>
+          <div class="circle circle-purple4"></div>
+          <div class="circle circle-purple5"></div>
+          <div class="circle circle-gray1"></div>
+          <div class="circle circle-gray2"></div>
+          <div class="circle circle-gray3"></div>
+          <div class="circle circle-gray4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<script src="./stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src="./jquery.min.js"></script>
+  <script src="./pen.js" crossorigin=""></script>
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body></html>
